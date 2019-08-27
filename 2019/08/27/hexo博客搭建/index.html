@@ -6,16 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Wakaka的博客</title>
+  <title>hexo博客搭建 | Wakaka的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="程序猿,Java,Python,前后端开发">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Wakaka的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="搭建博客第一步需要下载nodejs和git 第二步配置npm 接着下载cnpm来提高下载速度 在命令行中输入 1npm install -g cnpm --registry=https://registry.npm.taobao.org">
+<meta name="keywords" content="blog">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo博客搭建">
+<meta property="og:url" content="http://yoursite.com/2019/08/27/hexo博客搭建/index.html">
 <meta property="og:site_name" content="Wakaka的博客">
+<meta property="og:description" content="搭建博客第一步需要下载nodejs和git 第二步配置npm 接着下载cnpm来提高下载速度 在命令行中输入 1npm install -g cnpm --registry=https://registry.npm.taobao.org">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/assets/post_img/github.png">
+<meta property="og:updated_time" content="2019-08-27T01:56:03.464Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Wakaka的博客">
+<meta name="twitter:title" content="hexo博客搭建">
+<meta name="twitter:description" content="搭建博客第一步需要下载nodejs和git 第二步配置npm 接着下载cnpm来提高下载速度 在命令行中输入 1npm install -g cnpm --registry=https://registry.npm.taobao.org">
+<meta name="twitter:image" content="http://yoursite.com/assets/post_img/github.png">
   
     <link rel="alternative" href="/atom.xml" title="Wakaka的博客" type="application/atom+xml">
   
@@ -149,16 +155,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-hexo博客搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-hexo博客搭建" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/27/hexo博客搭建/">hexo博客搭建</a>
+    <h1 class="article-title" itemprop="name">
+      hexo博客搭建
     </h1>
   
 
@@ -176,9 +180,56 @@
 <p>接着下载cnpm来提高下载速度</p>
 <p>在命令行中输入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2019/08/27/hexo博客搭建/#more">more >></a>
-        
+
+<a id="more"></a>
+<p>注意事项：</p>
+<p>使用npm install 安装项目依赖时出现Package require os(darwin) not compatible with your platform(win32)的问题</p>
+<p>stackoverfllow.com上的回答为：</p>
+<p>This is an ignored error. fsevents is an optional dependency, is only used on macOS and not on Windows or Linux. You can simply ignore it! It always happens when using webpack (and many other packages) on Windows, it’s perfectly normal and expected.</p>
+<p>大致意思：这是一个可以忽略的错误，fsevents是可选的依赖，只能应用于maxOS系统，不适合Windows或者Linux，也就是忽略即可。</p>
+<p>非要解决的话，可尝试运行以下命令</p>
+<ol>
+<li>cnpm rebuild node-sass</li>
+<li>cnpm install</li>
+</ol>
+<p>cnpm可以写成npm，cnpm只是使用了淘宝镜像，国内网安装会快一些。</p>
+<p>下载完成后输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>创建文件夹进入目录<br>在命令行输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>这样就创建成功了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>即可完成在本地打开</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n “我的第一篇博客文章”</span><br></pre></td></tr></table></figure>
+
+<p>即可创建一篇博客文章</p>
+<p>在github上点击又上角加号，选择new repository。</p>
+<p><img src="/assets/post_img/github.png" alt="搭建GitHub网站"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+
+<p>下载上传git的插件 接下来设置_config.yml文件，到文件最底部</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/gowakaka/gowakaka.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>接下来<strong>hexo d</strong> 完成上传github仓库<br><a href="https://gowakaka.github.io/" target="_blank" rel="noopener">https://gowakaka.github.io/</a><br>完成个人博客网站搭建</p>
+<h2 id="修改博客格式"><a href="#修改博客格式" class="headerlink" title="修改博客格式"></a>修改博客格式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</span><br></pre></td></tr></table></figure>
+
+<p>下载，放在themes/yilia后进入_config.yml文件，修改theme</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#theme: landscape 把这一行注释掉换成下面</span><br><span class="line">theme: yilia</span><br></pre></td></tr></table></figure>
+
+<p>重新hexo clean , 重新生成一下 hexo g, 然后重新开启 hexo s 查看本地修改成果，一切正常后 hexo d 传到github上，即可在网站上查看<u><a href="https://gowakaka.github.io/" target="_blank" rel="noopener">https://gowakaka.github.io/</a></u><br>查看全部文章出处：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-deployer-git –save</span><br></pre></td></tr></table></figure>
+
+<p>然后在根目录的_config.yml上添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#新加的</span><br><span class="line">jsonContent:</span><br><span class="line">    meta: false</span><br><span class="line">    pages: false</span><br><span class="line">    posts:</span><br><span class="line">      title: true</span><br><span class="line">      date: true</span><br><span class="line">      path: true</span><br><span class="line">      text: false</span><br><span class="line">      raw: false</span><br><span class="line">      content: false</span><br><span class="line">      slug: false</span><br><span class="line">      updated: false</span><br><span class="line">      comments: false</span><br><span class="line">      link: false</span><br><span class="line">      permalink: false</span><br><span class="line">      excerpt: false</span><br><span class="line">      categories: false</span><br><span class="line">      tags: true</span><br></pre></td></tr></table></figure>
+
+<p>添加图片的方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;img src=&quot;/assets/blogImg/diary-20.jpg&quot; alt=&quot;&quot; width=&quot;450&quot;&gt;&lt;/p&gt;</span><br><span class="line">![](http://7tszky.com1.z0.glb.clouddn.com/Fr4tKHT39qEwCjjK7QlhWpHWNkvs)</span><br><span class="line">![](/assets/blogImg/dragon.jpg)</span><br></pre></td></tr></table></figure>
+
+<p>添加more按钮</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -200,16 +251,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/08/27/hexo博客搭建/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/27/hexo博客搭建/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/11/RDF-RDFS-OWL/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">RDF,RDFS,OWL</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -229,323 +339,14 @@
 
 
 
-
   
-    <article id="post-RDF-RDFS-OWL" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/11/RDF-RDFS-OWL/">RDF,RDFS,OWL</a>
-    </h1>
   
 
-        
-        <a href="/2019/07/11/RDF-RDFS-OWL/" class="archive-article-date">
-  	<time datetime="2019-07-11T09:05:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="RDF"><a href="#RDF" class="headerlink" title="RDF"></a>RDF</h2><p>RDF(资源描述框架)是描述网络资源的 W3C 标准, 其本质是一个数据模型（Data Model）,比如网页的标题、作者、修改日期、内容以及版权信息等。RDF 在 2004 年 2 月成为 W3C 标准。</p>
-<p>RDF -数据模型,RDFS -语义,Turtle/RDFa/RDF-XML -语法。</p>
-        
-          <a class="article-more-a" href="/2019/07/11/RDF-RDFS-OWL/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">KG</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/11/RDF-RDFS-OWL/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-知识图谱" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/11/知识图谱/">知识图谱</a>
-    </h1>
   
 
-        
-        <a href="/2019/07/11/知识图谱/" class="archive-article-date">
-  	<time datetime="2019-07-11T02:56:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="知识图谱的前世今生"><a href="#知识图谱的前世今生" class="headerlink" title="知识图谱的前世今生"></a>知识图谱的前世今生</h2><p><strong>1960 语义网络—&gt;1980s 本体论—&gt;1989 Web—&gt;1998 语义网—&gt;2006 链接数据—&gt;2012 知识图谱</strong></p>
-<p>语义网络是由Quillian于上世纪60年代提出的知识表达模式。语义网和链接数据是万维网之父Tim Berners Lee分别在1998年和2006提出的。</p>
-<h3 id="语义网络-Semantic-Network"><a href="#语义网络-Semantic-Network" class="headerlink" title="语义网络(Semantic Network)"></a>语义网络(Semantic Network)</h3><p>语义网络由相互连接的节点和边组成，节点表示概念或者对象，边表示他们之间的关系(is-a关系，比如：猫是一种哺乳动物；part-of关系，比如：脊椎是哺乳动物的一部分)，如下图。在表现形式上，语义网络和知识图谱相似，但语义网络更侧重于描述概念与概念之间的关系，（有点像生物的层次分类体系——界门纲目科属种），而知识图谱则更偏重于描述实体之间的关联。</p>
-        
-          <a class="article-more-a" href="/2019/07/11/知识图谱/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">KG</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/11/知识图谱/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-markdown语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/10/markdown语法/">markdown语法</a>
-    </h1>
   
 
-        
-        <a href="/2019/07/10/markdown语法/" class="archive-article-date">
-  	<time datetime="2019-07-10T10:33:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="一-标题"><a href="#一-标题" class="headerlink" title="一.标题"></a>一.标题</h2><ol>
-<li><p>使用 <code>=</code> 和 <code>-</code> 标记一级和二级标题<br><code>=</code> 和 <code>-</code> 标记语法格式如下：  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">我展示的是一级标题</span><br><span class="line">=================</span><br><span class="line"></span><br><span class="line">我展示的是二级标题</span><br><span class="line">-----------------</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用 <code>#</code> 号标记<br>使用 <code>#</code> 号可表示 1-6 级标题，一级标题对应一个 <code>#</code> 号，二级标题对应两个 <code>#</code> 号，以此类推。  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-        
-          <a class="article-more-a" href="/2019/07/10/markdown语法/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/10/markdown语法/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/10/我的第一篇博客文章/">我的第一篇博客文章</a>
-    </h1>
-  
-
-        
-        <a href="/2019/07/10/我的第一篇博客文章/" class="archive-article-date">
-  	<time datetime="2019-07-10T07:11:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有HTML的格式。</p>
-        
-          <a class="article-more-a" href="/2019/07/10/我的第一篇博客文章/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/10/我的第一篇博客文章/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -568,8 +369,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
