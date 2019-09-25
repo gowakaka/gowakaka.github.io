@@ -6,29 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>RDF,RDFS,OWL | Wakaka的博客</title>
+  <title>Wakaka的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="[toc] RDFRDF(资源描述框架)是描述网络资源的 W3C 标准, 其本质是一个数据模型（Data Model）,比如网页的标题、作者、修改日期、内容以及版权信息等。RDF 在 2004 年 2 月成为 W3C 标准。 RDF -数据模型,RDFS -语义,Turtle/RDFa/RDF-XML -语法。">
-<meta name="keywords" content="KG">
+  <meta name="description" content="本单元目标 数据库的好处 数据库相关概念 数据库存储数据的特点 MySQL产品的介绍和安装 MySQL服务的启动和停止 MySQL服务的登录和退出 MySQL的常见命令 MySQL的语法规范 SQL的语言分类 SQL的常见命令   DQL语言的学习 进阶1：基础查询 进阶2：条件查询 进阶3：排序查询 进阶4：常见函数   进阶5：分组查询 进阶6：多表连接查询 进阶7：子查询 进阶8：分页">
+<meta name="keywords" content="程序猿,Java,Python,前后端开发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="RDF,RDFS,OWL">
-<meta property="og:url" content="http://yoursite.com/2019/07/11/RDF-RDFS-OWL/index.html">
+<meta property="og:title" content="Wakaka的博客">
+<meta property="og:url" content="http://yoursite.com/2019/09/25/MySQL基础/index.html">
 <meta property="og:site_name" content="Wakaka的博客">
-<meta property="og:description" content="[toc] RDFRDF(资源描述框架)是描述网络资源的 W3C 标准, 其本质是一个数据模型（Data Model）,比如网页的标题、作者、修改日期、内容以及版权信息等。RDF 在 2004 年 2 月成为 W3C 标准。 RDF -数据模型,RDFS -语义,Turtle/RDFa/RDF-XML -语法。">
+<meta property="og:description" content="本单元目标 数据库的好处 数据库相关概念 数据库存储数据的特点 MySQL产品的介绍和安装 MySQL服务的启动和停止 MySQL服务的登录和退出 MySQL的常见命令 MySQL的语法规范 SQL的语言分类 SQL的常见命令   DQL语言的学习 进阶1：基础查询 进阶2：条件查询 进阶3：排序查询 进阶4：常见函数   进阶5：分组查询 进阶6：多表连接查询 进阶7：子查询 进阶8：分页">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/assets/post_img/SPO.png">
-<meta property="og:image" content="http://yoursite.com/assets/post_img/%E7%BD%97%E7%BA%B3%E5%B0%94%E5%A4%9ARDF.png">
-<meta property="og:image" content="http://yoursite.com/assets/post_img/%E7%BD%97%E7%BA%B3%E5%B0%94%E5%A4%9A.jpg">
-<meta property="og:image" content="http://yoursite.com/assets/post_img/%E8%AF%AD%E4%B9%89%E7%BD%91%E7%BB%9C%E7%BD%97%E7%BA%B3%E5%B0%94%E5%A4%9A.jpg">
-<meta property="og:image" content="http://yoursite.com/assets/post_img/%E7%BD%97%E7%BA%B3%E5%B0%94%E5%A4%9A.jpg">
-<meta property="og:image" content="http://yoursite.com/assets/post_img/RDFS.jpg">
-<meta property="og:image" content="http://yoursite.com/assets/post_img/OWL.jpg">
-<meta property="og:image" content="http://yoursite.com/assets/post_img/hasParent.jpg">
-<meta property="og:updated_time" content="2019-09-03T02:45:27.460Z">
+<meta property="og:updated_time" content="2019-09-25T11:08:21.680Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RDF,RDFS,OWL">
-<meta name="twitter:description" content="[toc] RDFRDF(资源描述框架)是描述网络资源的 W3C 标准, 其本质是一个数据模型（Data Model）,比如网页的标题、作者、修改日期、内容以及版权信息等。RDF 在 2004 年 2 月成为 W3C 标准。 RDF -数据模型,RDFS -语义,Turtle/RDFa/RDF-XML -语法。">
-<meta name="twitter:image" content="http://yoursite.com/assets/post_img/SPO.png">
+<meta name="twitter:title" content="Wakaka的博客">
+<meta name="twitter:description" content="本单元目标 数据库的好处 数据库相关概念 数据库存储数据的特点 MySQL产品的介绍和安装 MySQL服务的启动和停止 MySQL服务的登录和退出 MySQL的常见命令 MySQL的语法规范 SQL的语言分类 SQL的常见命令   DQL语言的学习 进阶1：基础查询 进阶2：条件查询 进阶3：排序查询 进阶4：常见函数   进阶5：分组查询 进阶6：多表连接查询 进阶7：子查询 进阶8：分页">
   
     <link rel="alternative" href="/atom.xml" title="Wakaka的博客" type="application/atom+xml">
   
@@ -162,185 +153,622 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-RDF-RDFS-OWL" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-MySQL基础" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      RDF,RDFS,OWL
-    </h1>
-  
-
-        
-        <a href="/2019/07/11/RDF-RDFS-OWL/" class="archive-article-date">
-  	<time datetime="2019-07-11T09:05:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-11</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>[toc]</p>
-<h2><span id="rdf">RDF</span></h2><p>RDF(资源描述框架)是描述网络资源的 W3C 标准, 其本质是一个数据模型（Data Model）,比如网页的标题、作者、修改日期、内容以及版权信息等。RDF 在 2004 年 2 月成为 W3C 标准。</p>
-<p>RDF -数据模型,RDFS -语义,Turtle/RDFa/RDF-XML -语法。</p>
+        <!-- toc -->
+
+<ul>
+<li><a href="#本单元目标">本单元目标</a></li>
+<li><a href="#数据库的好处">数据库的好处</a></li>
+<li><a href="#数据库相关概念">数据库相关概念</a></li>
+<li><a href="#数据库存储数据的特点">数据库存储数据的特点</a></li>
+<li><a href="#mysql产品的介绍和安装">MySQL产品的介绍和安装</a><ul>
+<li><a href="#mysql服务的启动和停止">MySQL服务的启动和停止</a></li>
+<li><a href="#mysql服务的登录和退出">MySQL服务的登录和退出</a></li>
+<li><a href="#mysql的常见命令">MySQL的常见命令</a></li>
+<li><a href="#mysql的语法规范">MySQL的语法规范</a></li>
+<li><a href="#sql的语言分类">SQL的语言分类</a></li>
+<li><a href="#sql的常见命令">SQL的常见命令</a></li>
+</ul>
+</li>
+<li><a href="#dql语言的学习">DQL语言的学习</a><ul>
+<li><a href="#进阶1基础查询">进阶1：基础查询</a></li>
+<li><a href="#进阶2条件查询">进阶2：条件查询</a></li>
+<li><a href="#进阶3排序查询">进阶3：排序查询</a></li>
+<li><a href="#进阶4常见函数">进阶4：常见函数</a></li>
+</ul>
+</li>
+<li><a href="#进阶5分组查询">进阶5：分组查询</a></li>
+<li><a href="#进阶6多表连接查询">进阶6：多表连接查询</a></li>
+<li><a href="#进阶7子查询">进阶7：子查询</a></li>
+<li><a href="#进阶8分页查询">进阶8：分页查询</a></li>
+<li><a href="#进阶9联合查询">进阶9：联合查询</a></li>
+<li><a href="#dml语言">DML语言</a><ul>
+<li><a href="#插入">插入</a></li>
+<li><a href="#修改">修改</a></li>
+<li><a href="#删除">删除</a></li>
+</ul>
+</li>
+<li><a href="#ddl语句">DDL语句</a><ul>
+<li><a href="#库和表的管理">库和表的管理</a></li>
+<li><a href="#常见类型">常见类型</a></li>
+<li><a href="#常见约束">常见约束</a></li>
+</ul>
+</li>
+<li><a href="#数据库事务">数据库事务</a><ul>
+<li><a href="#含义">含义</a></li>
+<li><a href="#特点">特点</a></li>
+<li><a href="#事务的分类">事务的分类：</a></li>
+<li><a href="#使用到的关键字">使用到的关键字</a></li>
+<li><a href="#事务的隔离级别">事务的隔离级别:</a></li>
+</ul>
+</li>
+<li><a href="#视图">视图</a><ul>
+<li><a href="#视图的创建">视图的创建</a></li>
+<li><a href="#视图的增删改查">视图的增删改查</a></li>
+<li><a href="#某些视图不能更新">某些视图不能更新</a></li>
+<li><a href="#视图逻辑的更新">视图逻辑的更新</a></li>
+<li><a href="#视图的删除">视图的删除</a></li>
+<li><a href="#视图结构的查看">视图结构的查看</a></li>
+</ul>
+</li>
+<li><a href="#存储过程">存储过程</a><ul>
+<li><a href="#创建存储过程">创建存储过程</a></li>
+</ul>
+<ul>
+<li><a href="#调用存储过程">调用存储过程</a></li>
+</ul>
+</li>
+<li><a href="#函数">函数</a><ul>
+<li><a href="#创建函数">创建函数</a></li>
+<li><a href="#调用函数">调用函数</a></li>
+<li><a href="#函数和存储过程的区别">函数和存储过程的区别</a></li>
+</ul>
+</li>
+<li><a href="#流程控制结构">流程控制结构</a><ul>
+<li><a href="#系统变量">系统变量</a></li>
+<li><a href="#自定义变量">自定义变量</a></li>
+<li><a href="#分支">分支</a></li>
+<li><a href="#循环">循环</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
 <a id="more"></a>
 
-<h3><span id="rdf表现形式">RDF表现形式</span></h3><p>它提供了一个统一的标准，用于描述实体/资源。简单来说，就是表示事物的一种方法和手段。RDF形式上表示为SPO三元组(他的基础构件是一个实体-属性-取值三元组)，有时候也称为一条语句（statement），知识图谱中我们也称其为一条知识，如下图。</p>
-<p><img src="/assets/post_img/SPO.png" alt="三元组"></p>
-<h4><span id="穿插一个小知识">穿插一个小知识</span></h4><p>什么是URL,URI,IRI。</p>
-<ul>
-<li><p><u>URL(Uniform Resource Locator) 统一资源定位符</u>,是用于在网络中传播和访问互联网资源的一个地址，只有通过特定的地址才能够访问的指定的资源或者网页，简而言之就是我们所说的网址，当然这样有些不太恰当，但是确实最容易被理解的.</p>
-</li>
-<li><p>URI(Uniform Resource Identifier) 统一资源标识符,URL是URI的子集。</p>
-</li>
-<li><p>IRI(Internationalized Resource Identifiers)  国际化资源标识符,URI规定用字符作为资源标识符的符号，本意就是为了便于人类识别和交流，但是URI又规定只能使用英文字符，这显然不利于世界上大多数非英语国家和地区的人民。解决的办法是引入Unicode字符，因为Unicode字符集包括了当今世界上所有书写文字的字符，如果资源标识符可以使用Unicode字符，则世界上任何文字都可用来作为标识符号。这种引入Unicode字符的资源标识符称为国际化资源标识符（IRI）。</p>
-</li>
-</ul>
-<p>在知识图谱中，我们用RDF形式化地表示这种三元关系。RDF(Resource Description Framework)，即资源描述框架，是W3C制定的，用于描述实体/资源的标准数据模型。RDF图中一共有三种类型，International Resource Identifiers(<strong>IRIs</strong>)，<strong>blank nodes</strong> 和 <strong>literals</strong>。下面是SPO每个部分的类型约束：</p>
-<ul>
-<li>Subject可以是IRI或blank node。</li>
-<li>Predicate是IRI。</li>
-<li>Object三种类型都可以。</li>
-</ul>
-<p>IRI我们可以看做是URI或者URL的泛化和推广，它在整个网络或者图中唯一定义了一个实体/资源，和我们的身份证号类似。</p>
-<p>literal是字面量，我们可以把它看做是带有数据类型的纯文本，比如罗纳尔多原名可以表示为”Ronaldo Luís Nazário de Lima”^^xsd:string。</p>
-<p>blank node简单来说就是没有IRI和literal的资源，或者说匿名资源。可能blank node的存在有点多余，不仅会给对RDF的理解带来额外的困难，并且在处理的时候也会引入一些问题。通常我更愿意用带有IRI的node来充当blank node，行使其功能。</p>
-<p>那么“罗纳尔多的中文名是罗纳尔多·路易斯·纳扎里奥·达·利马”这样一个三元组用RDF形式来表示就是：</p>
-<p><img src="/assets/post_img/%E7%BD%97%E7%BA%B3%E5%B0%94%E5%A4%9ARDF.png" alt="罗纳尔多RDF"></p>
-<p><u>“<a href="http://www.kg.com/person/1&quot;" target="_blank" rel="noopener">www.kg.com/person/1&quot;</a></u>是一个IRI，用来唯一的表示“罗纳尔多”这个实体。”kg:chineseName”也是一个IRI，用来表示“中文名”这样一个属性。”kg:”是RDF文件中所定义的prefix，如下所示。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@prefix kg: &lt;http://www.kg.com/ontology/&gt;</span><br></pre></td></tr></table></figure>
+<h2><span id="本单元目标">本单元目标</span></h2><pre><code>一、为什么要学习数据库
+二、数据库的相关概念      
+    DBMS、DB、SQL
+三、数据库存储数据的特点
+四、初始MySQL
+    MySQL产品的介绍        
+    MySQL产品的安装          ★        
+    MySQL服务的启动和停止     ★
+    MySQL服务的登录和退出     ★      
+    MySQL的常见命令和语法规范      
+五、DQL语言的学习   ★              
+    基础查询        ★             
+    条件查询         ★            
+    排序查询         ★                
+    常见函数        ★               
+    分组函数        ★              
+    分组查询           ★            
+    连接查询         ★            
+    子查询       √                  
+    分页查询       ★              
+    union联合查询    √            
 
-<p>即，kg:chineseName其实就是<u>“<a href="http://www.kg.com/ontology/chineseName&quot;" target="_blank" rel="noopener">http://www.kg.com/ontology/chineseName&quot;</a></u>的缩写。</p>
-<p>将上面的知识图用更正式的形式画出来：</p>
-<p><img src="/assets/post_img/%E7%BD%97%E7%BA%B3%E5%B0%94%E5%A4%9A.jpg" alt="罗纳尔多"></p>
-<p>我们其实可以认为知识图谱就包含两种节点类型，资源和字面量。借用数据结构中树的概念，字面量类似叶子节点，出度为0。现在读者应该知道为什么我会说之前那幅图不准确，并会误导大家对知识图谱的理解了吧。”罗纳尔多·路易斯·纳萨里奥·德·利马”作为字面量，是不能有指向外部节点的边的，况且之前的图并不能直观地体现知识图谱中资源/实体(用IRI表示)这样一个极其重要的概念。</p>
-<p><img src="/assets/post_img/%E8%AF%AD%E4%B9%89%E7%BD%91%E7%BB%9C%E7%BD%97%E7%BA%B3%E5%B0%94%E5%A4%9A.jpg" alt="语义网络罗纳尔多"></p>
-<h3><span id="rdf序列化方法">RDF序列化方法</span></h3><p>存储和传输RDF数据。目前，RDF序列化的方式主要有：<u>RDF/XML，N-Triples，Turtle，RDFa，JSON-LD</u>等几种。</p>
-<ol>
-<li><p><strong>RDF/XML</strong>，顾名思义，就是用XML的格式来表示RDF数据。之所以提出这个方法，是因为XML的技术比较成熟，有许多现成的工具来存储和解析XML。然而，对于RDF来说，XML的格式太冗长，也不便于阅读，通常我们不会使用这种方式来处理RDF数据。</p>
-</li>
-<li><p><strong>N-Triples</strong>，即用多个三元组来表示RDF数据集，是最直观的表示方法。在文件中，每一行表示一个三元组，方便机器解析和处理。开放领域知识图谱<a href="https://wiki.dbpedia.org/" target="_blank" rel="noopener">DBpedia</a>通常是用这种格式来发布数据的。</p>
-</li>
-<li><p><strong>Turtle</strong>, 应该是使用得最多的一种RDF序列化方式了。它比RDF/XML紧凑，且可读性比N-Triples好。</p>
-</li>
-<li><p><strong>RDFa</strong>, 即“The Resource Description Framework in Attributes”，是HTML5的一个扩展，在不改变任何显示效果的情况下，让网站构建者能够在页面中标记实体，像人物、地点、时间、评论等等。也就是说，将RDF数据嵌入到网页中，搜索引擎能够更好的解析非结构化页面，获取一些有用的结构化信息。读者可以去这个<a href="https://rdfa.info/play/" target="_blank" rel="noopener">页面</a>感受一下RDFa，其直观展示了普通用户看到的页面，浏览器看到的页面和搜索引擎解析出来的结构化信息。</p>
-</li>
-<li><p>JSON-LD，即“JSON for Linking Data”，用键值对的方式来存储RDF数据。感兴趣的读者可以参考此<a href="https://json-ld.org/" target="_blank" rel="noopener">网站</a>。</p>
-</li>
-</ol>
-<p>下面，我们结合第一篇文章中罗纳尔多知识图的例子，给出其N-Triples和Turtle的具体表示。</p>
-<p><img src="/assets/post_img/%E7%BD%97%E7%BA%B3%E5%B0%94%E5%A4%9A.jpg" alt="罗纳尔多"></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Example1 N-Triples:</span><br><span class="line"></span><br><span class="line">&lt;http:<span class="comment">//www.kg.com/person/1&gt; &lt;http://www.kg.com/ontology/chineseName&gt; "罗纳尔多·路易斯·纳萨里奥·德·利马"^^string.</span></span><br><span class="line">&lt;http:<span class="comment">//www.kg.com/person/1&gt; &lt;http://www.kg.com/ontology/career&gt; "足球运动员"^^string.</span></span><br><span class="line">&lt;http:<span class="comment">//www.kg.com/person/1&gt; &lt;http://www.kg.com/ontology/fullName&gt; "Ronaldo Luís Nazário de Lima"^^string.</span></span><br><span class="line">&lt;http:<span class="comment">//www.kg.com/person/1&gt; &lt;http://www.kg.com/ontology/birthDate&gt; "1976-09-18"^^date.</span></span><br><span class="line">&lt;http:<span class="comment">//www.kg.com/person/1&gt; &lt;http://www.kg.com/ontology/height&gt; "180"^^int.</span></span><br><span class="line">&lt;http:<span class="comment">//www.kg.com/person/1&gt; &lt;http://www.kg.com/ontology/weight&gt; "98"^^int.</span></span><br><span class="line">&lt;http:<span class="comment">//www.kg.com/person/1&gt; &lt;http://www.kg.com/ontology/nationality&gt; "巴西"^^string.</span></span><br><span class="line">&lt;http:<span class="comment">//www.kg.com/person/1&gt; &lt;http://www.kg.com/ontology/hasBirthPlace&gt; &lt;http://www.kg.com/place/10086&gt;.</span></span><br><span class="line">&lt;http:<span class="comment">//www.kg.com/place/10086&gt; &lt;http://www.kg.com/ontology/address&gt; "里约热内卢"^^string.</span></span><br><span class="line">&lt;http:<span class="comment">//www.kg.com/place/10086&gt; &lt;http://www.kg.com/ontology/coordinate&gt; "-22.908333, -43.196389"^^string.</span></span><br></pre></td></tr></table></figure>
+六、DML语言的学习    ★             
+    插入语句                        
+    修改语句                        
+    删除语句                        
+七、DDL语言的学习  
+    库和表的管理     √                
+    常见数据类型介绍  √          
+    常见约束        √            
+八、TCL语言的学习
+    事务和事务处理                 
+九、视图的讲解           √
+十、变量                      
+十一、存储过程和函数   
+十二、流程控制结构       </code></pre><h2><span id="数据库的好处">数据库的好处</span></h2><pre><code>1.持久化数据到本地
+2.可以实现结构化查询，方便管理</code></pre><h2><span id="数据库相关概念">数据库相关概念</span></h2><pre><code>1、DB：数据库，保存一组有组织的数据的容器
+2、DBMS：数据库管理系统，又称为数据库软件（产品），用于管理DB中的数据
+3、SQL:结构化查询语言，用于和DBMS通信的语言</code></pre><h2><span id="数据库存储数据的特点">数据库存储数据的特点</span></h2><pre><code>1、将数据放到表中，表再放到库中
+2、一个数据库中可以有多个表，每个表都有一个的名字，用来标识自己。表名具有唯一性。
+3、表具有一些特性，这些特性定义了数据在表中如何存储，类似java中 “类”的设计。
+4、表由列组成，我们也称为字段。所有表都是由一个或多个列组成的，每一列类似java 中的”属性”
+5、表中的数据是按行存储的，每一行类似于java中的“对象”。</code></pre><h2><span id="mysql产品的介绍和安装">MySQL产品的介绍和安装</span></h2><h3><span id="mysql服务的启动和停止">MySQL服务的启动和停止</span></h3><pre><code>方式一：计算机——右击管理——服务
+方式二：通过管理员身份运行
+net start 服务名（启动服务）
+net stop 服务名（停止服务）</code></pre><h3><span id="mysql服务的登录和退出">MySQL服务的登录和退出</span></h3><pre><code>方式一：通过mysql自带的客户端
+只限于root用户
 
-<p>用Turtle表示的时候我们会加上前缀（Prefix）对RDF的IRI进行缩写。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Example2 Turtle:</span><br><span class="line"></span><br><span class="line">@prefix person: &lt;http://www.kg.com/person/&gt; .</span><br><span class="line">@prefix place: &lt;http://www.kg.com/place/&gt; .</span><br><span class="line">@prefix : &lt;http://www.kg.com/ontology/&gt; .</span><br><span class="line"></span><br><span class="line">person:<span class="number">1</span> :chineseName <span class="string">"罗纳尔多·路易斯·纳萨里奥·德·利马"</span>^^string.</span><br><span class="line">person:<span class="number">1</span> :career <span class="string">"足球运动员"</span>^^string.</span><br><span class="line">person:<span class="number">1</span> :fullName <span class="string">"Ronaldo Luís Nazário de Lima"</span>^^string.</span><br><span class="line">person:<span class="number">1</span> :birthDate <span class="string">"1976-09-18"</span>^^date.</span><br><span class="line">person:<span class="number">1</span> :height <span class="string">"180"</span>^^int. </span><br><span class="line">person:<span class="number">1</span> :weight <span class="string">"98"</span>^^int.</span><br><span class="line">person:<span class="number">1</span> :nationality <span class="string">"巴西"</span>^^string. </span><br><span class="line">person:<span class="number">1</span> :hasBirthPlace place:<span class="number">10086.</span></span><br><span class="line">place:<span class="number">10086</span> :address <span class="string">"里约热内卢"</span>^^string.</span><br><span class="line">place:<span class="number">10086</span> :coordinate <span class="string">"-22.908333, -43.196389"</span>^^string.</span><br></pre></td></tr></table></figure>
+方式二：通过windows自带的客户端
+登录：
+mysql 【-h主机名 -P端口号 】-u用户名 -p密码
 
-<p>同一个实体拥有多个属性（数据属性）或关系（对象属性），我们可以只用一个subject来表示，使其更紧凑。我们可以将上面的Turtle改为：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Example3 Turtle:</span><br><span class="line"></span><br><span class="line">@prefix person: &lt;http://www.kg.com/person/&gt; .</span><br><span class="line">@prefix place: &lt;http://www.kg.com/place/&gt; .</span><br><span class="line">@prefix : &lt;http://www.kg.com/ontology/&gt; .</span><br><span class="line"></span><br><span class="line">person:<span class="number">1</span> :chineseName <span class="string">"罗纳尔多·路易斯·纳萨里奥·德·利马"</span>^^string;</span><br><span class="line">         :career <span class="string">"足球运动员"</span>^^string;</span><br><span class="line">         :fullName <span class="string">"Ronaldo Luís Nazário de Lima"</span>^^string;</span><br><span class="line">         :birthDate <span class="string">"1976-09-18"</span>^^date;</span><br><span class="line">         :height <span class="string">"180"</span>^^int;</span><br><span class="line">         :weight <span class="string">"98"</span>^^int;</span><br><span class="line">         :nationality <span class="string">"巴西"</span>^^string; </span><br><span class="line">         :hasBirthPlace place:<span class="number">10086.</span></span><br><span class="line">place:<span class="number">10086</span> :address <span class="string">"里约热内卢"</span>^^string;</span><br><span class="line">            :coordinate <span class="string">"-22.908333, -43.196389"</span>^^string.</span><br></pre></td></tr></table></figure>
+退出：
+exit或ctrl+C</code></pre><h3><span id="mysql的常见命令">MySQL的常见命令</span></h3><pre><code>1. 查看当前所有的数据库
+show databases;
+2. 打开指定的库
+use 库名
+3. 查看当前库的所有表
+show tables;
+4. 查看其它库的所有表
+show tables from 库名;
+5. 创建表
+create table 表名(
 
-<p>即，将一个实体用一个句子表示（这里的句子指的是一个英文句号“.”）而不是多个句子，属性间用分号隔开。</p>
-<p>在之前的文章提到了RDF的表达能力有限，无法区分类和对象，也无法定义和描述类的关系/属性。我的理解是，RDF是对具体事物的描述，缺乏抽象能力，无法对同一个类别的事物进行定义和描述。就以罗纳尔多这个知识图为例，RDF能够表达罗纳尔多和里约热内卢这两个实体具有哪些属性，以及它们之间的关系。但如果我们想定义罗纳尔多是人，里约热内卢是地点，并且人具有哪些属性，地点具有哪些属性，人和地点之间存在哪些关系，这个时候RDF就表示无能为力了。不论是在智能的概念上，还是在现实的应用当中，这种泛化抽象能力都是相当重要的；同时，这也是知识图谱本身十分强调的。RDFS和OWL这两种技术或者说模式语言/本体语言（schema/ontology language）解决了RDF表达能力有限的困境。</p>
-<h2><span id="rdfs-owl">RDFS、OWL</span></h2><p>之所以把它们合在一起说，因为它们都是用来描述RDF数据的。为了不显得这么抽象，我们可以用关系数据库中的概念进行类比。用过Mysql的读者应该知道，其database也被称作schema。这个schema和我们这里提到的schema language十分类似。我们可以认为数据库中的每一张表都是一个类（Class），表中的每一行都是该类的一个实例或者对象。表中的每一列就是这个类所包含的属性。<u>如果我们是在数据库中来表示人和地点这两个类别，那么为他们分别建一张表就行了；再用另外一张表来表示人和地点之间的关系。RDFS/OWL本质上是一些预定义词汇（vocabulary）构成的集合，用于对RDF进行类似的类定义及其属性的定义。</u></p>
-<p><strong>Notice</strong>: RDFS/OWL序列化方式和RDF没什么不同，其实在表现形式上，它们就是RDF。其常用的方式主要是<u>RDF/XML，Turtle</u>。另外，通常我们用小写开头的单词或词组来表示属性，大写开头的表示类。数据属性（data property，实体和literal字面量的关系）通常由名词组成，而对象数据（object property，实体和实体之间的关系）通常由动词（has，is之类的）加名词组成。剩下的部分符合驼峰命名法。为了将它们表示得更清楚，避免读者混淆，之后我们都会默认这种命名方式。读者实践过程中命名方式没有强制要求，但最好保持一致。</p>
-<h3><span id="rdfs">RDFS</span></h3><p>RDFS，即“Resource Description Framework Schema”，是最基础的模式语言。还是以罗纳尔多知识图为例，我们在概念、抽象层面对RDF数据进行定义。下面的RDFS定义了人和地点这两个类，及每个类包含的属性。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .</span><br><span class="line">@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .</span><br><span class="line">@prefix : &lt;http://www.kg.com/ontology/&gt; .</span><br><span class="line"></span><br><span class="line">### 这里我们用词汇rdfs:Class定义了“人”和“地点”这两个类。</span><br><span class="line">:Person rdf:type rdfs:Class.</span><br><span class="line">:Place rdf:type rdfs:Class.</span><br><span class="line"></span><br><span class="line">### rdfs当中不区分数据属性和对象属性，词汇rdf:Property定义了属性，即RDF的“边”。</span><br><span class="line">:chineseName rdf:type rdf:Property;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:string .</span><br><span class="line"></span><br><span class="line">:career rdf:type rdf:Property;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:string .</span><br><span class="line">        </span><br><span class="line">:fullName rdf:type rdf:Property;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:string .</span><br><span class="line">        </span><br><span class="line">:birthDate rdf:type rdf:Property;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:date .</span><br><span class="line"></span><br><span class="line">:height rdf:type rdf:Property;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:int .</span><br><span class="line">        </span><br><span class="line">:weight rdf:type rdf:Property;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:int .</span><br><span class="line">        </span><br><span class="line">:nationality rdf:type rdf:Property;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:string .</span><br><span class="line">        </span><br><span class="line">:hasBirthPlace rdf:type rdf:Property;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range :Place .</span><br><span class="line">        </span><br><span class="line">:address rdf:type rdf:Property;</span><br><span class="line">        rdfs:domain :Place;</span><br><span class="line">        rdfs:range xsd:string .</span><br><span class="line">        </span><br><span class="line">:coordinate rdf:type rdf:Property;</span><br><span class="line">        rdfs:domain :Place;</span><br><span class="line">        rdfs:range xsd:string .</span><br></pre></td></tr></table></figure>
+    列名 列类型,
+    列名 列类型，
+    。。。
+);
+6. 查看表结构
+desc 表名;
 
-<p>我们这里只介绍RDFS几个比较重要，常用的词汇：</p>
-<ol>
-<li><p>rdfs:Class. 用于定义类。</p>
-</li>
-<li><p>rdfs:domain. 用于表示该属性属于哪个类别。</p>
-</li>
-<li><p>rdfs:range. 用于描述该属性的取值类型。</p>
-</li>
-<li><p>rdfs:subClassOf. 用于描述该类的父类。比如，我们可以定义一个运动员类，声明该类是人的子类。</p>
-</li>
-<li><p>rdfs:subProperty. 用于描述该属性的父属性。比如，我们可以定义一个名称属性，声明中文名称和全名是名称的子类。</p>
-</li>
-</ol>
-<p>其实rdf:Property和rdf:type也是RDFS的词汇，因为RDFS本质上就是RDF词汇的一个扩展。我们在这里不罗列进去，是不希望读者混淆。RDFS其他的词汇及其用法请参考W3C官方文档。</p>
-<p>为了让读者更直观地理解RDF和RDFS/OWL在知识图谱中所代表的层面，我们用下面的图来表示例子中的数据层和模式层。</p>
-<p><img src="/assets/post_img/RDFS.jpg" alt="RDFS"></p>
-<p><strong>Data</strong>层是我们用RDF对罗纳尔多知识图的具体描述，<strong>Vocabulary</strong>是我们自己定义的一些词汇（类别，属性），<strong>RDF(S)</strong>则是预定义词汇。从下到上是一个具体到抽象的过程。图中我们用<u>红色圆角矩形表示类，绿色字体表示rdf:type，rdfs:domain，rdfs:range三种预定义词汇，虚线表示rdf:type这种所属关系</u>。另外，为了减少图中连线的交叉，我们只保留了career这一个属性的rdf:type所属关系，省略了其他属性的此关系。</p>
-<h3><span id="owl">OWL</span></h3><p>上面我们提到，RDFS本质上是RDF词汇的一个扩展。后来人们发现RDFS的表达能力还是相当有限，因此提出了OWL。我们也可以把OWL当做是RDFS的一个扩展，其添加了额外的预定义词汇。</p>
-<p>OWL，即“Web Ontology Language”，语义网技术栈的核心之一。OWL有两个主要的功能：</p>
-<ol>
-<li><p>提供快速、灵活的数据建模能力。</p>
-</li>
-<li><p>高效的自动推理。</p>
-</li>
-</ol>
-<p>我们先谈如何利用OWL进行数据建模。用OWL对罗纳尔多知识图进行语义层的描述：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .</span><br><span class="line">@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .</span><br><span class="line">@prefix : &lt;http://www.kg.com/ontology/&gt; .</span><br><span class="line">@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .</span><br><span class="line"></span><br><span class="line">### 这里我们用词汇owl:Class定义了“人”和“地点”这两个类。</span><br><span class="line">:Person rdf:type owl:Class.</span><br><span class="line">:Place rdf:type owl:Class.</span><br><span class="line"></span><br><span class="line">### owl区分数据属性和对象属性（对象属性表示实体和实体之间的关系）。词汇owl:DatatypeProperty定义了数据属性，owl:ObjectProperty定义了对象属性。</span><br><span class="line">:chineseName rdf:type owl:DatatypeProperty;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:string .</span><br><span class="line"></span><br><span class="line">:career rdf:type owl:DatatypeProperty;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:string .</span><br><span class="line">        </span><br><span class="line">:fullName rdf:type owl:DatatypeProperty;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:string .</span><br><span class="line">        </span><br><span class="line">:birthDate rdf:type owl:DatatypeProperty;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:date .</span><br><span class="line"></span><br><span class="line">:height rdf:type owl:DatatypeProperty;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:int .</span><br><span class="line">        </span><br><span class="line">:weight rdf:type owl:DatatypeProperty;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:int .</span><br><span class="line">        </span><br><span class="line">:nationality rdf:type owl:DatatypeProperty;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range xsd:string .</span><br><span class="line">        </span><br><span class="line">:hasBirthPlace rdf:type owl:ObjectProperty;</span><br><span class="line">        rdfs:domain :Person;</span><br><span class="line">        rdfs:range :Place .</span><br><span class="line">        </span><br><span class="line">:address rdf:type owl:DatatypeProperty;</span><br><span class="line">        rdfs:domain :Place;</span><br><span class="line">        rdfs:range xsd:string .</span><br><span class="line">        </span><br><span class="line">:coordinate rdf:type owl:DatatypeProperty;</span><br><span class="line">        rdfs:domain :Place;</span><br><span class="line">        rdfs:range xsd:string .</span><br></pre></td></tr></table></figure>
 
-<p>schema层的描述语言换为OWL后，层次图表示为：</p>
-<p><img src="/assets/post_img/OWL.jpg" alt="OWL"></p>
-<p>数据属性用青色表示，对象属性由蓝色表示。</p>
-<p>罗纳尔多这个例子不能展现OWL丰富的表达能力，我们这里简单介绍一下常用的词汇：</p>
-<ul>
-<li><p>描述属性特征的词汇</p>
-<ol>
-<li><p><strong>owl:TransitiveProperty.</strong> 表示该属性具有传递性质。例如，我们定义“位于”是具有传递性的属性，若A位于B，B位于C，那么A肯定位于C。</p>
-</li>
-<li><p><strong>owl:SymmetricProperty.</strong> 表示该属性具有对称性。例如，我们定义“认识”是具有对称性的属性，若A认识B，那么B肯定认识A。</p>
-</li>
-<li><p><strong>owl:FunctionalProperty.</strong> 表示该属性取值的唯一性。 例如，我们定义“母亲”是具有唯一性的属性，若A的母亲是B，在其他地方我们得知A的母亲是C，那么B和C指的是同一个人。</p>
-</li>
-<li><p><strong>owl:inverseOf.</strong> 定义某个属性的相反关系。例如，定义“父母”的相反关系是“子女”，若A是B的父母，那么B肯定是A的子女。</p>
-</li>
-</ol>
-</li>
-<li><p>本体映射词汇（Ontology Mapping）</p>
-<ol>
-<li><p><strong>owl:equivalentClass.</strong> 表示某个类和另一个类是相同的。</p>
-</li>
-<li><p><strong>owl:equivalentProperty.</strong> 表示某个属性和另一个属性是相同的。</p>
-</li>
-<li><p><strong>owl:sameAs.</strong> 表示两个实体是同一个实体。</p>
-</li>
-</ol>
-</li>
-</ul>
-<p>本体映射主要用在融合多个独立的Ontology（Schema）。举个例子，张三自己构建了一个本体结构，其中定义了Person这样一个类来表示人；李四则在自己构建的本体中定义Human这个类来表示人。当我们融合这两个本体的时候，就可以用到OWL的本体映射词汇。如果没有OWL，我们将无法融合这些知识图谱。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;http:<span class="comment">//www.zhangsan.com/ontology/Person&gt; rdf:type owl:Class .</span></span><br><span class="line">&lt;http:<span class="comment">//www.lisi.com/ontology/Human&gt; rdf:type owl:Class .</span></span><br><span class="line">&lt;http:<span class="comment">//www.zhangsan.com/ontology/Person&gt; owl:equivalentClass &lt;http://www.lisi.com/ontology/Human&gt; .</span></span><br></pre></td></tr></table></figure>
+7.查看服务器的版本
+方式一：登录到mysql服务端
+select version();
+方式二：没有登录到mysql服务端
+mysql --version
+或
+mysql --V</code></pre><h3><span id="mysql的语法规范">MySQL的语法规范</span></h3><pre><code>1. 不区分大小写,但建议关键字大写，表名、列名小写
+2. 每条命令最好用分号结尾
+3. 每条命令根据需要，可以进行缩进 或换行
+4. 注释
+    单行注释：#注释文字
+    单行注释：-- 注释文字
+    多行注释：/* 注释文字  */</code></pre><h3><span id="sql的语言分类">SQL的语言分类</span></h3><pre><code>DQL（Data Query Language）：数据查询语言
+    select 
+DML(Data Manipulate Language):数据操作语言
+    insert 、update、delete
+DDL（Data Define Languge）：数据定义语言
+    create、drop、alter
+TCL（Transaction Control Language）：事务控制语言
+    commit、rollback</code></pre><h3><span id="sql的常见命令">SQL的常见命令</span></h3><pre><code>show databases； 查看所有的数据库
+use 库名； 打开指定 的库
+show tables ; 显示库中的所有表
+show tables from 库名;显示指定库中的所有表
+create table 表名(
+    字段名 字段类型,    
+    字段名 字段类型
+); 创建表
 
-<p>更多的OWL词汇和特性请参考<em>W3C官网文档</em><a href="https://www.w3.org/TR/2004/REC-owl-features-20040210/" target="_blank" rel="noopener">OWL Web Ontology Language Overview</a>。</p>
-<p>接下来我们谈一下OWL在推理方面的能力。知识图谱的推理主要分为两类：<strong>基于本体</strong>的推理和<strong>基于规则</strong>的推理。</p>
-<p>我们这里谈的是基于本体的推理。读者应该发现，上面所介绍的属性特征词汇其实就创造了对RDF数据进行推理的前提。此时，我们加入支持OWL推理的推理机（reasoner），就能够执行基于本体的推理了。RDFS同样支持推理，由于缺乏丰富的表达能力，推理能力也不强。举个例子，我们用RDFS定义人和动物两个类，另外，定义人是动物的一个子类。此时推理机能够推断出一个实体若是人，那么它也是动物。OWL当然支持这种基本的推理，除此之外，凭借其强大的表达能力，我们能进行更有实际意义的推理。想象一个场景，我们有一个庞大数据库存储人物的亲属关系。里面很多关系都是单向的，比如，其只保存了A的父亲（母亲）是B，但B的子女字段里面没有A，如下表。</p>
-<table>
-<thead>
-<tr>
-<th align="center">personNotation</th>
-<th align="center">hasParent</th>
-<th>hasChild</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">A</td>
-<td align="center">B</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">B</td>
-<td align="center"></td>
-<td></td>
-</tr>
-</tbody></table>
-<p>如果在只有单个关系，数据量不多的情况下，我们尚能人工的去补全这种关系。如果在关系种类上百，人物上亿的情况下，我们如何处理？当进行关系修改，添加，删除等操作的时候，该怎么处理？这种场景想想就会让人崩溃。如果我们用inversOf来表示hasParent和hasChild互为逆关系，上面的数据可以表示为：</p>
-<p><img src="/assets/post_img/hasParent.jpg" alt="hasParent"></p>
-<p>绿色的关系表示是我们RDF数据中真实存在的，红色的关系是推理得到的。通过这个例子，相信读者应该初步了解了OWL的推理功能和能力。</p>
-<p>目前，OWL的最新版本是OWL 2，在兼容OWL的基础上添加了新的功能，有兴趣的读者可以查阅<a href="https://www.w3.org/TR/owl2-overview/" target="_blank" rel="noopener">W3C文档</a>。另外，OWL 2包含了三个标准，或者三种配置（Profile），它们是OWL 2完整标准（OWL 2/Full）的一个子集。读者目前不用考虑它们之间的差别，只有当我们要用到OWL自动推理功能的时候才需要考虑到底使用哪一种配置。且在大多数情况下，我们需要知道哪种配置才是最合适的。下面简单说说它们使用的场景：</p>
-<ol>
-<li><p><strong>OWL 2/EL</strong> 使用场景：本体结构中有大量相互链接的类和属性，设计者想用自动推理机得到里面复杂的关系。</p>
-</li>
-<li><p><strong>OWL 2/QL</strong> 使用场景：有大量的实例数据。OWL 2 QL本体可以被改写为SQL查询，适用于使用OBDA（ontology based data access）的方式来访问关系数据库。也就是说我们不用显式地把关系数据库中的数据转为RDF，而是通过映射的方式，将数据库转为虚拟RDF图进行访问。</p>
-</li>
-<li><p><strong>OWL 2/RL</strong> 使用场景：需要结合基于规则的推理引擎（rule-based reasoning engine）的场合。</p>
-</li>
-</ol>
+desc 表名; 查看指定表的结构
+select * from 表名;显示表中的所有数据</code></pre><h2><span id="dql语言的学习">DQL语言的学习</span></h2><h3><span id="进阶1基础查询">进阶1：基础查询</span></h3><pre><code>语法：
+SELECT 要查询的东西
+【FROM 表名】;
 
+类似于Java中 :System.out.println(要打印的东西);
+特点：
+①通过select查询完的结果 ，是一个虚拟的表格，不是真实存在
+② 要查询的东西 可以是常量值、可以是表达式、可以是字段、可以是函数</code></pre><h3><span id="进阶2条件查询">进阶2：条件查询</span></h3><pre><code>条件查询：根据条件过滤原始表的数据，查询到想要的数据
+语法：
+select 
+    要查询的字段|表达式|常量值|函数
+from 
+    表
+where 
+    条件 ;
+
+分类：
+一、条件表达式
+    示例：salary&gt;10000
+    条件运算符：
+    &gt; &lt; &gt;= &lt;= = != &lt;&gt;
+
+二、逻辑表达式
+示例：salary&gt;10000 &amp;&amp; salary&lt;20000
+
+逻辑运算符：
+
+    and（&amp;&amp;）:两个条件如果同时成立，结果为true，否则为false
+    or(||)：两个条件只要有一个成立，结果为true，否则为false
+    not(!)：如果条件成立，则not后为false，否则为true
+
+三、模糊查询
+示例：last_name like &apos;a%&apos;</code></pre><h3><span id="进阶3排序查询">进阶3：排序查询</span></h3><pre><code>语法：
+select
+    要查询的东西
+from
+    表
+where 
+    条件
+
+order by 排序的字段|表达式|函数|别名 【asc|desc】</code></pre><h3><span id="进阶4常见函数">进阶4：常见函数</span></h3><pre><code>一、单行函数
+1、字符函数
+    concat拼接
+    substr截取子串
+    upper转换成大写
+    lower转换成小写
+    trim去前后指定的空格和字符
+    ltrim去左边空格
+    rtrim去右边空格
+    replace替换
+    lpad左填充
+    rpad右填充
+    instr返回子串第一次出现的索引
+    length 获取字节个数
+
+2、数学函数
+    round 四舍五入
+    rand 随机数
+    floor向下取整
+    ceil向上取整
+    mod取余
+    truncate截断
+3、日期函数
+    now当前系统日期+时间
+    curdate当前系统日期
+    curtime当前系统时间
+    str_to_date 将字符转换成日期
+    date_format将日期转换成字符
+4、流程控制函数
+    if 处理双分支
+    case语句 处理多分支
+        情况1：处理等值判断
+        情况2：处理条件判断
+
+5、其他函数
+    version版本
+    database当前库
+    user当前连接用户</code></pre><p>二、分组函数</p>
+<pre><code>sum 求和
+max 最大值
+min 最小值
+avg 平均值
+count 计数
+
+特点：
+1、以上五个分组函数都忽略null值，除了count(*)
+2、sum和avg一般用于处理数值型
+    max、min、count可以处理任何数据类型
+3、都可以搭配distinct使用，用于统计去重后的结果
+4、count的参数可以支持：
+    字段、*、常量值，一般放1
+
+   建议使用 count(*)</code></pre><h2><span id="进阶5分组查询">进阶5：分组查询</span></h2><pre><code>语法：
+select 查询的字段，分组函数
+from 表
+group by 分组的字段
+
+
+特点：
+1、可以按单个字段分组
+2、和分组函数一同查询的字段最好是分组后的字段
+3、分组筛选
+        针对的表    位置            关键字
+分组前筛选：    原始表        group by的前面        where
+分组后筛选：    分组后的结果集    group by的后面        having
+
+4、可以按多个字段分组，字段之间用逗号隔开
+5、可以支持排序
+6、having后可以支持别名</code></pre><h2><span id="进阶6多表连接查询">进阶6：多表连接查询</span></h2><pre><code>笛卡尔乘积：如果连接条件省略或无效则会出现
+解决办法：添加上连接条件</code></pre><p>一、传统模式下的连接 ：等值连接——非等值连接</p>
+<pre><code>1.等值连接的结果 = 多个表的交集
+2.n表连接，至少需要n-1个连接条件
+3.多个表不分主次，没有顺序要求
+4.一般为表起别名，提高阅读性和性能</code></pre><p>二、sql99语法：通过join关键字实现连接</p>
+<pre><code>含义：1999年推出的sql语法
+支持：
+等值连接、非等值连接 （内连接）
+外连接
+交叉连接
+
+语法：
+
+select 字段，...
+from 表1
+【inner|left outer|right outer|cross】join 表2 on  连接条件
+【inner|left outer|right outer|cross】join 表3 on  连接条件
+【where 筛选条件】
+【group by 分组字段】
+【having 分组后的筛选条件】
+【order by 排序的字段或表达式】
+
+好处：语句上，连接条件和筛选条件实现了分离，简洁明了！</code></pre><p>三、自连接</p>
+<p>案例：查询员工名和直接上级的名称</p>
+<p>sql99</p>
+<pre><code>SELECT e.last_name,m.last_name
+FROM employees e
+JOIN employees m ON e.`manager_id`=m.`employee_id`;</code></pre><p>sql92</p>
+<pre><code>SELECT e.last_name,m.last_name
+FROM employees e,employees m 
+WHERE e.`manager_id`=m.`employee_id`;</code></pre><h2><span id="进阶7子查询">进阶7：子查询</span></h2><p>含义：</p>
+<pre><code>一条查询语句中又嵌套了另一条完整的select语句，其中被嵌套的select语句，称为子查询或内查询
+在外面的查询语句，称为主查询或外查询</code></pre><p>特点：</p>
+<pre><code>1、子查询都放在小括号内
+2、子查询可以放在from后面、select后面、where后面、having后面，但一般放在条件的右侧
+3、子查询优先于主查询执行，主查询使用了子查询的执行结果
+4、子查询根据查询结果的行数不同分为以下两类：
+① 单行子查询
+    结果集只有一行
+    一般搭配单行操作符使用：&gt; &lt; = &lt;&gt; &gt;= &lt;= 
+    非法使用子查询的情况：
+    a、子查询的结果为一组值
+    b、子查询的结果为空
+
+② 多行子查询
+    结果集有多行
+    一般搭配多行操作符使用：any、all、in、not in
+    in： 属于子查询结果中的任意一个就行
+    any和all往往可以用其他查询代替</code></pre><h2><span id="进阶8分页查询">进阶8：分页查询</span></h2><p>应用场景：</p>
+<pre><code>实际的web项目中需要根据用户的需求提交对应的分页查询的sql语句</code></pre><p>语法：</p>
+<pre><code>select 字段|表达式,...
+from 表
+【where 条件】
+【group by 分组字段】
+【having 条件】
+【order by 排序的字段】
+limit 【起始的条目索引，】条目数;</code></pre><p>特点：</p>
+<pre><code>1.起始条目索引从0开始
+
+2.limit子句放在查询语句的最后
+
+3.公式：select * from  表 limit （page-1）*sizePerPage,sizePerPage
+假如:
+每页显示条目数sizePerPage
+要显示的页数 page</code></pre><h2><span id="进阶9联合查询">进阶9：联合查询</span></h2><p>引入：<br>    union 联合、合并</p>
+<p>语法：</p>
+<pre><code>select 字段|常量|表达式|函数 【from 表】 【where 条件】 union 【all】
+select 字段|常量|表达式|函数 【from 表】 【where 条件】 union 【all】
+select 字段|常量|表达式|函数 【from 表】 【where 条件】 union  【all】
+.....
+select 字段|常量|表达式|函数 【from 表】 【where 条件】</code></pre><p>特点：</p>
+<pre><code>1、多条查询语句的查询的列数必须是一致的
+2、多条查询语句的查询的列的类型几乎相同
+3、union代表去重，union all代表不去重</code></pre><h2><span id="dml语言">DML语言</span></h2><h3><span id="插入">插入</span></h3><p>语法：<br>    insert into 表名(字段名，…)<br>    values(值1，…);</p>
+<p>特点：</p>
+<pre><code>1、字段类型和值类型一致或兼容，而且一一对应
+2、可以为空的字段，可以不用插入值，或用null填充
+3、不可以为空的字段，必须插入值
+4、字段个数和值的个数必须一致
+5、字段可以省略，但默认所有字段，并且顺序和表中的存储顺序一致</code></pre><h3><span id="修改">修改</span></h3><p>修改单表语法：</p>
+<pre><code>update 表名 set 字段=新值,字段=新值
+【where 条件】</code></pre><p>修改多表语法：</p>
+<pre><code>update 表1 别名1,表2 别名2
+set 字段=新值，字段=新值
+where 连接条件
+and 筛选条件</code></pre><h3><span id="删除">删除</span></h3><p>方式1：delete语句 </p>
+<p>单表的删除： ★<br>    delete from 表名 【where 筛选条件】</p>
+<p>多表的删除：<br>    delete 别名1，别名2<br>    from 表1 别名1，表2 别名2<br>    where 连接条件<br>    and 筛选条件;</p>
+<p>方式2：truncate语句</p>
+<pre><code>truncate table 表名</code></pre><p>两种方式的区别【面试题】</p>
+<pre><code>#1.truncate不能加where条件，而delete可以加where条件
+
+#2.truncate的效率高一丢丢
+
+#3.truncate 删除带自增长的列的表后，如果再插入数据，数据从1开始
+#delete 删除带自增长列的表后，如果再插入数据，数据从上一次的断点处开始
+
+#4.truncate删除不能回滚，delete删除可以回滚</code></pre><h2><span id="ddl语句">DDL语句</span></h2><h3><span id="库和表的管理">库和表的管理</span></h3><p>库的管理：</p>
+<pre><code>一、创建库
+create database 库名
+二、删除库
+drop database 库名</code></pre><p>表的管理：<br>    #1.创建表<br><br>    CREATE TABLE IF NOT EXISTS stuinfo(<br>        stuId INT,<br>        stuName VARCHAR(20),<br>        gender CHAR,<br>        bornDate DATETIME<br><br><br>    );<br><br>    DESC studentinfo;<br>    #2.修改表 alter<br>    语法：ALTER TABLE 表名 ADD|MODIFY|DROP|CHANGE COLUMN 字段名 【字段类型】;<br><br>    #①修改字段名<br>    ALTER TABLE studentinfo CHANGE  COLUMN sex gender CHAR;<br><br>    #②修改表名<br>    ALTER TABLE stuinfo RENAME [TO]  studentinfo;<br>    #③修改字段类型和列级约束<br>    ALTER TABLE studentinfo MODIFY COLUMN borndate DATE ;<br><br>    #④添加字段<br><br>    ALTER TABLE studentinfo ADD COLUMN email VARCHAR(20) first;<br>    #⑤删除字段<br>    ALTER TABLE studentinfo DROP COLUMN email;<br><br><br>    #3.删除表<br><br>    DROP TABLE [IF EXISTS] studentinfo;</p>
+<h3><span id="常见类型">常见类型</span></h3><pre><code>整型：
+
+小数：
+    浮点型
+    定点型
+字符型：
+日期型：
+Blob类型：</code></pre><h3><span id="常见约束">常见约束</span></h3><pre><code>NOT NULL
+DEFAULT
+UNIQUE
+CHECK
+PRIMARY KEY
+FOREIGN KEY</code></pre><h2><span id="数据库事务">数据库事务</span></h2><h3><span id="含义">含义</span></h3><pre><code>通过一组逻辑操作单元（一组DML——sql语句），将数据从一种状态切换到另外一种状态</code></pre><h3><span id="特点">特点</span></h3><pre><code>（ACID）
+原子性：要么都执行，要么都回滚
+一致性：保证数据的状态操作前和操作后保持一致
+隔离性：多个事务同时操作相同数据库的同一个数据时，一个事务的执行不受另外一个事务的干扰
+持久性：一个事务一旦提交，则数据将持久化到本地，除非其他事务对其进行修改</code></pre><p>相关步骤：</p>
+<pre><code>1、开启事务
+2、编写事务的一组逻辑操作单元（多条sql语句）
+3、提交事务或回滚事务</code></pre><h3><span id="事务的分类">事务的分类：</span></h3><p>隐式事务，没有明显的开启和结束事务的标志</p>
+<pre><code>比如
+insert、update、delete语句本身就是一个事务</code></pre><p>显式事务，具有明显的开启和结束事务的标志</p>
+<pre><code>1、开启事务
+取消自动提交事务的功能
+
+2、编写事务的一组逻辑操作单元（多条sql语句）
+insert
+update
+delete
+
+3、提交事务或回滚事务</code></pre><h3><span id="使用到的关键字">使用到的关键字</span></h3><pre><code>set autocommit=0;
+start transaction;
+commit;
+rollback;
+
+savepoint  断点
+commit to 断点
+rollback to 断点</code></pre><h3><span id="事务的隔离级别">事务的隔离级别:</span></h3><p>事务并发问题如何发生？</p>
+<pre><code>当多个事务同时操作同一个数据库的相同数据时</code></pre><p>事务的并发问题有哪些？</p>
+<pre><code>脏读：一个事务读取到了另外一个事务未提交的数据
+不可重复读：同一个事务中，多次读取到的数据不一致
+幻读：一个事务读取数据时，另外一个事务进行更新，导致第一个事务读取到了没有更新的数据</code></pre><p>如何避免事务的并发问题？</p>
+<pre><code>通过设置事务的隔离级别
+1、READ UNCOMMITTED
+2、READ COMMITTED 可以避免脏读
+3、REPEATABLE READ 可以避免脏读、不可重复读和一部分幻读
+4、SERIALIZABLE可以避免脏读、不可重复读和幻读</code></pre><p>设置隔离级别：</p>
+<pre><code>set session|global  transaction isolation level 隔离级别名;</code></pre><p>查看隔离级别：</p>
+<pre><code>select @@tx_isolation;</code></pre><h2><span id="视图">视图</span></h2><p>含义：理解成一张虚拟的表</p>
+<p>视图和表的区别：</p>
+<pre><code>    使用方式    占用物理空间
+
+视图    完全相同    不占用，仅仅保存的是sql逻辑
+
+表    完全相同    占用</code></pre><p>视图的好处：</p>
+<pre><code>1、sql语句提高重用性，效率高
+2、和表实现了分离，提高了安全性</code></pre><h3><span id="视图的创建">视图的创建</span></h3><pre><code>语法：
+CREATE VIEW  视图名
+AS
+查询语句;</code></pre><h3><span id="视图的增删改查">视图的增删改查</span></h3><pre><code>1、查看视图的数据 ★
+
+SELECT * FROM my_v4;
+SELECT * FROM my_v1 WHERE last_name=&apos;Partners&apos;;
+
+2、插入视图的数据
+INSERT INTO my_v4(last_name,department_id) VALUES(&apos;虚竹&apos;,90);
+
+3、修改视图的数据
+
+UPDATE my_v4 SET last_name =&apos;梦姑&apos; WHERE last_name=&apos;虚竹&apos;;
+
+
+4、删除视图的数据
+DELETE FROM my_v4;</code></pre><h3><span id="某些视图不能更新">某些视图不能更新</span></h3><pre><code>包含以下关键字的sql语句：分组函数、distinct、group  by、having、union或者union all
+常量视图
+Select中包含子查询
+join
+from一个不能更新的视图
+where子句的子查询引用了from子句中的表</code></pre><h3><span id="视图逻辑的更新">视图逻辑的更新</span></h3><pre><code>#方式一：
+CREATE OR REPLACE VIEW test_v7
+AS
+SELECT last_name FROM employees
+WHERE employee_id&gt;100;
+
+#方式二:
+ALTER VIEW test_v7
+AS
+SELECT employee_id FROM employees;
+
+SELECT * FROM test_v7;</code></pre><h3><span id="视图的删除">视图的删除</span></h3><pre><code>DROP VIEW test_v1,test_v2,test_v3;</code></pre><h3><span id="视图结构的查看">视图结构的查看</span></h3><pre><code>DESC test_v7;
+SHOW CREATE VIEW test_v7;</code></pre><h2><span id="存储过程">存储过程</span></h2><p>含义：一组经过预先编译的sql语句的集合<br>好处：</p>
+<pre><code>1、提高了sql语句的重用性，减少了开发程序员的压力
+2、提高了效率
+3、减少了传输次数</code></pre><p>分类：</p>
+<pre><code>1、无返回无参
+2、仅仅带in类型，无返回有参
+3、仅仅带out类型，有返回无参
+4、既带in又带out，有返回有参
+5、带inout，有返回有参
+注意：in、out、inout都可以在一个存储过程中带多个</code></pre><h3><span id="创建存储过程">创建存储过程</span></h3><p>语法：</p>
+<pre><code>create procedure 存储过程名(in|out|inout 参数名  参数类型,...)
+begin
+    存储过程体
+
+end</code></pre><p>类似于方法：</p>
+<pre><code>修饰符 返回类型 方法名(参数类型 参数名,...){
+
+    方法体;
+}</code></pre><p>注意</p>
+<pre><code>1、需要设置新的结束标记
+delimiter 新的结束标记
+示例：
+delimiter $
+
+CREATE PROCEDURE 存储过程名(IN|OUT|INOUT 参数名  参数类型,...)
+BEGIN
+    sql语句1;
+    sql语句2;
+
+END $
+
+2、存储过程体中可以有多条sql语句，如果仅仅一条sql语句，则可以省略begin end
+
+3、参数前面的符号的意思
+in:该参数只能作为输入 （该参数不能做返回值）
+out：该参数只能作为输出（该参数只能做返回值）
+inout：既能做输入又能做输出</code></pre><h1><span id="调用存储过程">调用存储过程</span></h1><pre><code>call 存储过程名(实参列表)</code></pre><h2><span id="函数">函数</span></h2><h3><span id="创建函数">创建函数</span></h3><p>学过的函数：LENGTH、SUBSTR、CONCAT等<br>语法：</p>
+<pre><code>CREATE FUNCTION 函数名(参数名 参数类型,...) RETURNS 返回类型
+BEGIN
+    函数体
+
+END</code></pre><h3><span id="调用函数">调用函数</span></h3><pre><code>SELECT 函数名（实参列表）</code></pre><h3><span id="函数和存储过程的区别">函数和存储过程的区别</span></h3><pre><code>        关键字        调用语法    返回值            应用场景
+函数        FUNCTION    SELECT 函数()    只能是一个        一般用于查询结果为一个值并返回时，当有返回值而且仅仅一个
+存储过程    PROCEDURE    CALL 存储过程()    可以有0个或多个        一般用于更新</code></pre><h2><span id="流程控制结构">流程控制结构</span></h2><h3><span id="系统变量">系统变量</span></h3><p>一、全局变量</p>
+<p>作用域：针对于所有会话（连接）有效，但不能跨重启</p>
+<pre><code>查看所有全局变量
+SHOW GLOBAL VARIABLES;
+查看满足条件的部分系统变量
+SHOW GLOBAL VARIABLES LIKE &apos;%char%&apos;;
+查看指定的系统变量的值
+SELECT @@global.autocommit;
+为某个系统变量赋值
+SET @@global.autocommit=0;
+SET GLOBAL autocommit=0;</code></pre><p>二、会话变量</p>
+<p>作用域：针对于当前会话（连接）有效</p>
+<pre><code>查看所有会话变量
+SHOW SESSION VARIABLES;
+查看满足条件的部分会话变量
+SHOW SESSION VARIABLES LIKE &apos;%char%&apos;;
+查看指定的会话变量的值
+SELECT @@autocommit;
+SELECT @@session.tx_isolation;
+为某个会话变量赋值
+SET @@session.tx_isolation=&apos;read-uncommitted&apos;;
+SET SESSION tx_isolation=&apos;read-committed&apos;;</code></pre><h3><span id="自定义变量">自定义变量</span></h3><p>一、用户变量</p>
+<p>声明并初始化：</p>
+<pre><code>SET @变量名=值;
+SET @变量名:=值;
+SELECT @变量名:=值;</code></pre><p>赋值：</p>
+<pre><code>方式一：一般用于赋简单的值
+SET 变量名=值;
+SET 变量名:=值;
+SELECT 变量名:=值;
+
+
+方式二：一般用于赋表 中的字段值
+SELECT 字段名或表达式 INTO 变量
+FROM 表;</code></pre><p>使用：</p>
+<pre><code>select @变量名;</code></pre><p>二、局部变量</p>
+<p>声明：</p>
+<pre><code>declare 变量名 类型 【default 值】;</code></pre><p>赋值：</p>
+<pre><code>方式一：一般用于赋简单的值
+SET 变量名=值;
+SET 变量名:=值;
+SELECT 变量名:=值;
+
+
+方式二：一般用于赋表 中的字段值
+SELECT 字段名或表达式 INTO 变量
+FROM 表;</code></pre><p>使用：</p>
+<pre><code>select 变量名</code></pre><p>二者的区别：</p>
+<pre><code>作用域            定义位置        语法</code></pre><p>用户变量    当前会话        会话的任何地方        加@符号，不用指定类型<br>局部变量    定义它的BEGIN END中     BEGIN END的第一句话    一般不用加@,需要指定类型</p>
+<h3><span id="分支">分支</span></h3><p>一、if函数<br>    语法：if(条件，值1，值2)<br>    特点：可以用在任何位置</p>
+<p>二、case语句</p>
+<p>语法：</p>
+<pre><code>情况一：类似于switch
+case 表达式
+when 值1 then 结果1或语句1(如果是语句，需要加分号) 
+when 值2 then 结果2或语句2(如果是语句，需要加分号)
+...
+else 结果n或语句n(如果是语句，需要加分号)
+end 【case】（如果是放在begin end中需要加上case，如果放在select后面不需要）
+
+情况二：类似于多重if
+case 
+when 条件1 then 结果1或语句1(如果是语句，需要加分号) 
+when 条件2 then 结果2或语句2(如果是语句，需要加分号)
+...
+else 结果n或语句n(如果是语句，需要加分号)
+end 【case】（如果是放在begin end中需要加上case，如果放在select后面不需要）</code></pre><p>特点：<br>    可以用在任何位置</p>
+<p>三、if elseif语句</p>
+<p>语法：</p>
+<pre><code>if 情况1 then 语句1;
+elseif 情况2 then 语句2;
+...
+else 语句n;
+end if;</code></pre><p>特点：<br>    只能用在begin end中！！！！！！！！！！！！！！！</p>
+<p>三者比较：<br>            应用场合<br>    if函数        简单双分支<br>    case结构    等值判断 的多分支<br>    if结构        区间判断 的多分支</p>
+<h3><span id="循环">循环</span></h3><p>语法：</p>
+<pre><code>【标签：】WHILE 循环条件  DO
+    循环体
+END WHILE 【标签】;</code></pre><p>特点：</p>
+<pre><code>只能放在BEGIN END里面
+
+如果要搭配leave跳转语句，需要使用标签，否则可以不用标签
+
+leave类似于java中的break语句，跳出所在循环！！！</code></pre>
       
 
       
@@ -348,17 +776,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">KG</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -409,7 +826,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/11/RDF-RDFS-OWL/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/25/MySQL基础/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -423,18 +840,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/08/27/hexo博客搭建/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          hexo博客搭建
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/07/11/知识图谱/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">知识图谱</div>
+    <a href="/2019/09/18/JVM/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JVM</div>
       <i class="icon-circle-right"></i>
     </a>
   

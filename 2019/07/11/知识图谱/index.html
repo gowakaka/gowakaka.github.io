@@ -177,9 +177,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="知识图谱的前世今生"><a href="#知识图谱的前世今生" class="headerlink" title="知识图谱的前世今生"></a>知识图谱的前世今生</h2><p><strong>1960 语义网络—&gt;1980s 本体论—&gt;1989 Web—&gt;1998 语义网—&gt;2006 链接数据—&gt;2012 知识图谱</strong></p>
+        <h2><span id="知识图谱的前世今生">知识图谱的前世今生</span></h2><p><strong>1960 语义网络—&gt;1980s 本体论—&gt;1989 Web—&gt;1998 语义网—&gt;2006 链接数据—&gt;2012 知识图谱</strong></p>
 <p>语义网络是由Quillian于上世纪60年代提出的知识表达模式。语义网和链接数据是万维网之父Tim Berners Lee分别在1998年和2006提出的。</p>
-<h3 id="语义网络-Semantic-Network"><a href="#语义网络-Semantic-Network" class="headerlink" title="语义网络(Semantic Network)"></a>语义网络(Semantic Network)</h3><p>语义网络由相互连接的节点和边组成，节点表示概念或者对象，边表示他们之间的关系(is-a关系，比如：猫是一种哺乳动物；part-of关系，比如：脊椎是哺乳动物的一部分)，如下图。在表现形式上，语义网络和知识图谱相似，但语义网络更侧重于描述概念与概念之间的关系，（有点像生物的层次分类体系——界门纲目科属种），而知识图谱则更偏重于描述实体之间的关联。</p>
+<h3><span id="语义网络semantic-network">语义网络(Semantic Network)</span></h3><p>语义网络由相互连接的节点和边组成，节点表示概念或者对象，边表示他们之间的关系(is-a关系，比如：猫是一种哺乳动物；part-of关系，比如：脊椎是哺乳动物的一部分)，如下图。在表现形式上，语义网络和知识图谱相似，但语义网络更侧重于描述概念与概念之间的关系，（有点像生物的层次分类体系——界门纲目科属种），而知识图谱则更偏重于描述实体之间的关联。</p>
 <a id="more"></a>
 <p><img src="/assets/post_img/semantic_Network.png" alt="语义网络"><br>语义网络的<strong>优点</strong>：</p>
 <ol>
@@ -216,10 +216,10 @@
 
 <p>RDF，RDFS/OWL属于语义网技术栈，它们的提出，使得语义网克服了语义网络的缺点。</p>
 <p>尽管语义网络有这些缺点，还是有许多项目是基于语义网络的思想建立起来的。</p>
-<h3 id="语义网-Semantic-Web"><a href="#语义网-Semantic-Web" class="headerlink" title="语义网(Semantic Web)"></a>语义网(Semantic Web)</h3><p>相对于语义网络，语义网和链接数据倾向于描述万维网中资源、数据之间的关系。其实，本质上，语义网、链接数据还有Web 3.0都是同一个概念，只是在不同的时间节点和环境中，它们各自描述的角度不同。<strong>它们都是指W3C制定的用于描述和关联万维网数据的一系列技术标准，即，语义网技术栈</strong>。</p>
+<h3><span id="语义网semantic-web">语义网(Semantic Web)</span></h3><p>相对于语义网络，语义网和链接数据倾向于描述万维网中资源、数据之间的关系。其实，本质上，语义网、链接数据还有Web 3.0都是同一个概念，只是在不同的时间节点和环境中，它们各自描述的角度不同。<strong>它们都是指W3C制定的用于描述和关联万维网数据的一系列技术标准，即，语义网技术栈</strong>。</p>
 <p><strong>语义网</strong>是一个更官方的名称，也是该领域学者使用得最多的一个术语，同时，也用于指代其相关的技术标准。在万维网诞生之初，网络上的内容只是人类可读，而计算机无法理解和处理。比如，我们浏览一个网页，我们能够轻松理解网页上面的内容，而计算机只知道这是一个网页。网页里面有图片，有链接，但是计算机并不知道图片是关于什么的，也不清楚链接指向的页面和当前页面有何关系。语义网正是为了使得网络上的数据变得机器可读而提出的一个通用框架。“Semantic”就是用更丰富的方式来表达数据背后的含义，让机器能够理解数据。“Web”则是希望这些数据相互链接，组成一个庞大的信息网络，正如互联网中相互链接的网页，只不过基本单位变为粒度更小的数据。</p>
-<h3 id="链接数据-Linked-Data"><a href="#链接数据-Linked-Data" class="headerlink" title="链接数据(Linked Data)"></a>链接数据(Linked Data)</h3><p><strong>链接数据</strong>起初是用于定义如何利用语义网技术在网上发布数据，其强调在不同的数据集间创建链接。Tim Berners Lee提出了发布数据的<u>四个原则</u>，并根据数据集的开放程度将其划分为1到5星5个层次。链接数据也被当做是语义网技术一个更简洁，简单的描述。当它指语义网技术时，它更强调“Web”，弱化了“Semantic”的部分。对应到语义网技术栈，它倾向于使用<strong>RDF</strong>和<strong>SPARQL</strong>（RDF查询语言）技术，对于Schema层的技术，RDFS或者OWL，则很少使用。链接数据应该是最接近知识图谱的一个概念，从某种角度说，知识图谱是对链接数据这个概念的进一步包装。</p>
-<h3 id="知识图谱-KG"><a href="#知识图谱-KG" class="headerlink" title="知识图谱(KG)"></a>知识图谱(KG)</h3><p>知识图谱是由本体（Ontology）作为Schema层，和RDF数据模型兼容的结构化数据集。本体本身是个哲学名词，AI研究人员于上个世纪70年代引入计算机领域。Tom Gruber把本体定义为“概念和关系的形式化描述”，分别指实体的类层次和关系层次。我们以上篇文章罗纳尔多知识图为例，我们用IRI唯一标志的节点都是某个类的一个实例，每一条边都表示一个关系。罗纳尔多是一个人，里约热内卢是一个地点，我们用RDF来表示就是：</p>
+<h3><span id="链接数据linked-data">链接数据(Linked Data)</span></h3><p><strong>链接数据</strong>起初是用于定义如何利用语义网技术在网上发布数据，其强调在不同的数据集间创建链接。Tim Berners Lee提出了发布数据的<u>四个原则</u>，并根据数据集的开放程度将其划分为1到5星5个层次。链接数据也被当做是语义网技术一个更简洁，简单的描述。当它指语义网技术时，它更强调“Web”，弱化了“Semantic”的部分。对应到语义网技术栈，它倾向于使用<strong>RDF</strong>和<strong>SPARQL</strong>（RDF查询语言）技术，对于Schema层的技术，RDFS或者OWL，则很少使用。链接数据应该是最接近知识图谱的一个概念，从某种角度说，知识图谱是对链接数据这个概念的进一步包装。</p>
+<h3><span id="知识图谱kg">知识图谱(KG)</span></h3><p>知识图谱是由本体（Ontology）作为Schema层，和RDF数据模型兼容的结构化数据集。本体本身是个哲学名词，AI研究人员于上个世纪70年代引入计算机领域。Tom Gruber把本体定义为“概念和关系的形式化描述”，分别指实体的类层次和关系层次。我们以上篇文章罗纳尔多知识图为例，我们用IRI唯一标志的节点都是某个类的一个实例，每一条边都表示一个关系。罗纳尔多是一个人，里约热内卢是一个地点，我们用RDF来表示就是：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">www.kg.com/person/1 rdf:type kg:Person.</span><br><span class="line">www.kg.com/place/10086 rdf:type kg:Place.</span><br></pre></td></tr></table></figure>
 
 <p>关系我们也称为<strong>属性</strong>（Property），根据是实体和实体之间的关系还是实体和数据值之间的关系分为<strong>对象属性</strong>（Object Property）和<strong>数据属性</strong>（Data Property）。在图中，罗纳尔多和里约热内卢的关系（本例中是对象属性）与罗纳尔多和全名的关系（本例中是数据属性）用RDF就可以表示为：</p>
